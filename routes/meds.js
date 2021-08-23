@@ -5,17 +5,17 @@ let Med = require("./../models/meds.model.js")
 
 router.route("/AddMed").post((req,res) => {
 
-    const GenericName = req.body.GenericName
-    const QuemicalName = req.body.QuemicalName
-    const Image = req.body.Image
-    const Characteristics = req.body.Characteristics
+    const MedName = req.body.MedName
+    const TherapeuticUse = req.body.TherapeuticUse
+    const AdverseEffects = req.body.AdverseEffects
+    const Dosification = req.body.Dosification
 
     
     const newOrder = new Med({
-			GenericName: GenericName,
-			QuemicalName: QuemicalName,
-			Image: Image,
-			Characteristics: Characteristics
+			MedName: MedName,
+			TherapeuticUse: TherapeuticUse,
+			AdverseEffects: AdverseEffects,
+			Dosification: Dosification
     })
 
     newOrder.save()

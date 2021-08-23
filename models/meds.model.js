@@ -2,20 +2,20 @@ const mongoose = require("mongoose")
 const Schema = mongoose.Schema
 
 const MedsSchema = new Schema({
-    QuemicalName: {
+    MedName: {
         type: String,
         required: true,
     },
-    GenericName: {
+    TherapeuticUse: {
         type: String,
         required: true,
     },
-    Image:{
-        type: String,
+    AdverseEffects:{
+        type: Array,
         required: true
     },
-		Characteristics: {
-			type: Object,
+		Dosification: {
+			type: Array,
 			required: true
 		}
 
