@@ -25,6 +25,11 @@ router.route("/AddMed").post((req,res) => {
     // })
 })
 
+router.route("/Meds").get((req,res) => {
+	Med.find().then((meds) => {
+		res.json(meds)
+	})
+})
 
 // router.route("/RetrieveAndSend/:id").get((req,res) => {
 
