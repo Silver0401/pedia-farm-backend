@@ -34,20 +34,10 @@ dataBase.on("error", error => console.log(error))
 dataBase.once("open", () => console.log("Connected to MongooseDB"))
 
 
-
-// Order Routes
-const Orders = require("./routes/orders")
-app.use("/DataCenter", Orders)
-
 // Meds Routes
 const Meds = require("./routes/meds")
 app.use("/DataCenter", Meds)
 
-
-
-// Support Route
-const Support = require("./routes/support")
-app.use("/DataCenter", Support)
 
 
 // Port Listening

@@ -14,7 +14,7 @@ const MedsSchema = new Schema({
         type: Array,
         required: true
     },
-		Dosification: {
+		RelativeMeds:{
 			type: Array,
 			required: true
 		}

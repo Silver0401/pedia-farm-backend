@@ -8,14 +8,14 @@ router.route("/AddMed").post((req,res) => {
     const MedName = req.body.MedName
     const TherapeuticUse = req.body.TherapeuticUse
     const AdverseEffects = req.body.AdverseEffects
-    const Dosification = req.body.Dosification
+    const RelativeMeds = req.body.RelativeMeds
 
     
     const newOrder = new Med({
 			MedName: MedName,
 			TherapeuticUse: TherapeuticUse,
 			AdverseEffects: AdverseEffects,
-			Dosification: Dosification
+			RelativeMeds: RelativeMeds
     })
 
     newOrder.save()
