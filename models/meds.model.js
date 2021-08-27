@@ -11,7 +11,7 @@ const MedsSchema = new Schema({
         required: true,
     },
     AdverseEffects:{
-        type: Array,
+        type: Object,
         required: true
     },
 		RelativeMeds:{
