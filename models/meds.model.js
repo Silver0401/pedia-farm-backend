@@ -15,7 +15,7 @@ const MedsSchema = new Schema({
         required: true
     },
 		RelativeMeds:{
-			type: Array,
+			type: Object,
 			required: true
 		}
 
